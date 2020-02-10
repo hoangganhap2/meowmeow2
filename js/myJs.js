@@ -65,7 +65,7 @@ $('#no').mousemove(function() {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Tại vì Hoàng ủn ỉn hiền quá mờ :v hehehehe ";
+    var text = " Tại vì Hoàng ủn ỉn hiền lành dễ thương đúng không nhể :v  ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -117,7 +117,7 @@ $('#yes').click(function() {
                 text: "Nghĩ về đôi ta anh chỉ muốn nói, Đơn giản một câu, chính là yêu em",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
-                    window.location = 'http://fb.com';
+                    window.location = 'https://www.facebook.com/hoangganhap281295';
                   }
             })
         }
