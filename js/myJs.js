@@ -14,9 +14,9 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'Hế lô Meow',
-        text: 'Mình có điều này muốn hỏi Meow nè nhớ phải trả lời thật lòng nhaaa.',
-        imageUrl: 'img/cuteCat.jpg',
+        title: 'Hihi 14-2.Nhớ ấn vào OK nhé <3',
+        text: 'Xin lỗi Hường nhiều vì lời chúc muộn, cũng như không bên Meow ngày hôm nay được',
+        imageUrl: 'img/14-2-2.jpg',
         imageWidth: 300,
         imageHeight: 300,
         background: '#fff url("img/iput-bg.jpg")',
@@ -27,99 +27,99 @@ function firstQuestion(){
 }
 
  // switch button position
- function switchButton() {
-    var audio = new Audio('../sound/duck.mp3');
-    audio.play();
-    var leftNo = $('#no').css("left");
-    var topNO = $('#no').css("top");
-    var leftY = $('#yes').css("left");
-    var topY = $('#yes').css("top");
-    $('#no').css("left", leftY);
-    $('#no').css("top", topY);
-    $('#yes').css("left", leftNo);
-    $('#yes').css("top", topNO);
-    console.log('kk');
-}
-// move random button póition
-function moveButton() {
-    var audio = new Audio('../sound/Swish1.mp3');
-    audio.play();
-    var x = Math.random() * 500;
-    var y = Math.random() * 500;
-    var left = x + 'px';
-    var top = y + 'px';
-    $('#no').css("left", left);
-    $('#no').css("top", top);
-}
-
-
-var n = 0;
-$('#no').mousemove(function() {
-    if (n < 1)
-        switchButton();
-    if (n > 1)
-        moveButton();
-    n++;
-});
-
-// generate text in input
-function textGenerate() {
-    var n = "";
-    var text = " Tại vì Hoàng ủn ỉn hiền lành dễ thương đúng không nhể :v  ";
-    var a = Array.from(text);
-    var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
-    var count = textVal.length;
-    if (count > 0) {
-        for (let i = 1; i <= count; i++) {
-            n = n + a[i];
-            if (i == text.length + 1) {
-                $('#txtReason').val("");
-                n = "";
-                break;
-            }
-        }
-    }
-    $('#txtReason').val(n);
-    setTimeout("textGenerate()", 1);
-}
-
-// show popup
-$('#yes').click(function() {
-    var audio = new Audio('../sound/tick.mp3');
-    audio.play();
-    Swal.fire({
-        title: 'Nói cho a lí do Meow thích a đi :v',
-        html: true,
-        width: 900,
-        padding: '3em',
-        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
-        background: '#fff url("img/iput-bg.jpg")',
-        backdrop: `
-              rgba(0,0,123,0.4)
-              url("img/giphy2.gif")
-              left top
-              no-repeat
-            `,
-        showCancelButton: true,
-        cancelButtonText: "Ngại quá , bỏ :v",
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonColor: '#fe8a71',
-        cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi cho a <3'
-    }).then((result) => {
-        if (result.value) {
-            Swal.fire({
-                width: 900,
-                confirmButtonText: 'Okiiiii lun <3',
-                background: '#fff url("img/iput-bg.jpg")',
-                title: 'Hehe a biết mà , Yêu Meow 3000',
-                text: "Nghĩ về đôi ta anh chỉ muốn nói, Đơn giản một câu, chính là yêu em",
-                confirmButtonColor: '#83d0c9',
-                onClose: () => {
-                    window.location = 'https://www.facebook.com/hoangganhap281295';
-                  }
-            })
-        }
-    })
-})
+//  function switchButton() {
+//     var audio = new Audio('../sound/duck.mp3');
+//     audio.play();
+//     var leftNo = $('#no').css("left");
+//     var topNO = $('#no').css("top");
+//     var leftY = $('#yes').css("left");
+//     var topY = $('#yes').css("top");
+//     $('#no').css("left", leftY);
+//     $('#no').css("top", topY);
+//     $('#yes').css("left", leftNo);
+//     $('#yes').css("top", topNO);
+//     console.log('kk');
+// }
+// // move random button póition
+// function moveButton() {
+//     var audio = new Audio('../sound/Swish1.mp3');
+//     audio.play();
+//     var x = Math.random() * 500;
+//     var y = Math.random() * 500;
+//     var left = x + 'px';
+//     var top = y + 'px';
+//     $('#no').css("left", left);
+//     $('#no').css("top", top);
+// }
+//
+//
+// var n = 0;
+// $('#no').mousemove(function() {
+//     if (n < 1)
+//         switchButton();
+//     if (n > 1)
+//         moveButton();
+//     n++;
+// });
+//
+// // generate text in input
+// function textGenerate() {
+//     var n = "";
+//     var text = " Tại vì Hoàng ủn ỉn hiền lành dễ thương đúng không nhể :v  ";
+//     var a = Array.from(text);
+//     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
+//     var count = textVal.length;
+//     if (count > 0) {
+//         for (let i = 1; i <= count; i++) {
+//             n = n + a[i];
+//             if (i == text.length + 1) {
+//                 $('#txtReason').val("");
+//                 n = "";
+//                 break;
+//             }
+//         }
+//     }
+//     $('#txtReason').val(n);
+//     setTimeout("textGenerate()", 1);
+// }
+//
+// // show popup
+// $('#yes').click(function() {
+//     var audio = new Audio('../sound/tick.mp3');
+//     audio.play();
+//     Swal.fire({
+//         title: 'Nói cho a lí do Meow thích a đi :v',
+//         html: true,
+//         width: 900,
+//         padding: '3em',
+//         html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
+//         background: '#fff url("img/iput-bg.jpg")',
+//         backdrop: `
+//               rgba(0,0,123,0.4)
+//               url("img/giphy2.gif")
+//               left top
+//               no-repeat
+//             `,
+//         showCancelButton: true,
+//         cancelButtonText: "Ngại quá , bỏ :v",
+//         confirmButtonColor: '#3085d6',
+//         cancelButtonColor: '#d33',
+//         confirmButtonColor: '#fe8a71',
+//         cancelButtonColor: '#f6cd61',
+//         confirmButtonText: 'Gửi cho a <3'
+//     }).then((result) => {
+//         if (result.value) {
+//             Swal.fire({
+//                 width: 900,
+//                 confirmButtonText: 'Okiiiii lun <3',
+//                 background: '#fff url("img/iput-bg.jpg")',
+//                 title: 'Hehe a biết mà , Yêu Meow 3000',
+//                 text: "Nghĩ về đôi ta anh chỉ muốn nói, Đơn giản một câu, chính là yêu em",
+//                 confirmButtonColor: '#83d0c9',
+//                 onClose: () => {
+//                     window.location = 'https://www.facebook.com/hoangganhap281295';
+//                   }
+//             })
+//         }
+//     })
+// })
